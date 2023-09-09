@@ -1,5 +1,9 @@
 #include <stdio.h>
-
+/**
+* main - entry point
+* main print saize of each type of variable
+* Return: always zero
+*/
 int main(void)
 {
 	printf("Size of a char: %lu byte(s)\n", sizeof(char));
