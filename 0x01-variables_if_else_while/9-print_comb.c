@@ -8,20 +8,16 @@ int main(void)
 {
 	int n = 48;
 
-	while (n < 57)
-	{
-		putchar(n);
-		putchar(',');
-		putchar(' ');
-		n++;
-	}
 	while (n <= 57)
 	{
-	if (n == 57)
-	{
 		putchar(n);
+		if (n != 57)
+		{
+		putchar(',');
+		putchar(' ');
+		}
+		n++;
 	}
-	n++;
-	}
+	putchar('\n');
 return (0);
 }
