@@ -10,9 +10,12 @@ int print_last_digit(int num)
 
 if (num < 0)
 {
-	num = (-1) * num;
+	l = -1 * (num % 10);
 }
+else
+{
 	l = num % 10;
+}
 	_putchar(l + '0');
 	return (l);
 }
