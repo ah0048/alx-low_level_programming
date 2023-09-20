@@ -20,11 +20,17 @@ char *_strncpy(char *dest, char *src, int n)
 	{
 		j++;
 	}
-	if (n > j)
-		n = j;
-	for (s = 0; s <= n; s++)
+	for (s = 0; s < n; s++)
 	{
+		if (s <= j)
+		{
 		dest[s] = src[s];
+		}
+		else
+		{
+			dest[s] = '\0';
+		}
 	}
+
 	return (dest);
 }
