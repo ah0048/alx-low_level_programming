@@ -7,15 +7,18 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i, sum;
-i = 0;
-sum = 0;
-	while (*s1 != '\0' && *s1 == *s2)
+	int sum;
+
+	sum = 0;
+	while (*s1)
 	{
-	       s1++;
-	       s2++;
-	       i++;
+		if (*s1 != *s2)
+		{
+			sum = (int)*s1 - (int)*s2;
+			break;
+		}
+		s1++;
+		s2++;
 	}
-	sum = (int)*s1 - (int)*s2; 
 	return (sum);
 }
