@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include "main.h"
 /**
 * _strstr -  function fills the first n bytes of the memory area pointed
@@ -16,5 +17,5 @@ char *_strstr(char *haystack, char *needle)
 			return (haystack + i);
 		}
 	}
-	return ('\0');
+	return (NULL);
 }
