@@ -36,7 +36,7 @@ int main(int argc, char *argv[])
 		{
 			sum++;
 			ch = ch - a[i];
-		}		
+		}
 	}
 	printf("%d\n", sum);
 	return (0);
