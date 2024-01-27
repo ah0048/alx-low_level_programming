@@ -17,7 +17,7 @@ void print_all(const char * const format, ...)
 	va_start(args, format);
 	while (format[i])
 	{
-		current = format[i];
+		current = format[i++];
 			switch (current)
 			{
 				case 'c':
@@ -36,7 +36,6 @@ void print_all(const char * const format, ...)
 					}
 					break;
 				default:
-					i++;
 					continue;
 			}
 		if (format[i])
