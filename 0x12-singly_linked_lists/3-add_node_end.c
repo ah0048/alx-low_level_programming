@@ -1,6 +1,6 @@
 #include "lists.h"
 /**
- * add_node - writes the character c to stdout
+ * add_node_end - writes the character c to stdout
  * @head: The character to print
  * @str: string
  * Return: num
