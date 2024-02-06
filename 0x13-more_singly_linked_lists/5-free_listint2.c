@@ -4,7 +4,7 @@
  * @head: The character to print
  * Return: num
  */
-void free_listint2(listint_t **head);
+void free_listint2(listint_t **head)
 {
 	listint_t *node, *newnode;
 
