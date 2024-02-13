@@ -1,5 +1,20 @@
 #include "main.h"
 /**
+ * _strlen - read from a file
+ * @s: pointer
+ * Return: int
+ */
+int _strlen(char *s)
+{
+	int i = 0;
+
+	if (!s)
+		return (0);
+	while (*s++)
+		i++;
+	return (i);
+}
+/**
  * create_file - read from a file
  * @filename: pointer
  * @text_content: index
@@ -9,7 +24,7 @@ int create_file(const char *filename, char *text_content)
 {
 	int fd;
 
-	size_t bytes, len = text_content ?  strlen(text_content) : 0;
+	size_t bytes, len = _strlen(text_content);
 
 	if (!filename)
 		return (-1);
