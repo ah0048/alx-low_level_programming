@@ -14,7 +14,7 @@ int main(int ac, char **av)
 {
 	int from_fd = 0, to_fd = 0;
 
-	ssize_t b;
+	ssize_t b = 0;
 
 	char buf[READ_BUF_SIZE];
 
