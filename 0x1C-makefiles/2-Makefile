@@ -1,9 +1,6 @@
 CC = gcc
-SRC = main.c school.c
+SRC = main.c holberton.c
 OBJ = $(SRC:.c=.o)
-Name = school
-all: $(Name)
-$(OBJ): $(SRC)
-	$(CC) -c $^
-$(Name): $(OBJ)
-	$(CC) $^ -o $@
+NAME = holberton
+all: $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
